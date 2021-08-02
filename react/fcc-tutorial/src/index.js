@@ -2,11 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Test from './pages/Test'
+import CallbackProp from './pages/CallbackProp'
+import Lifecycle from './pages/LifecycleComponents'
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+const Routing = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={App}/>
+        <Route path="/test" component={Test}/>
+        <Route path="/callback" component={CallbackProp}/>
+        <Route path="/lifecycle" component={Lifecycle}/>
+      </Switch>
+    </Router>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Routing />
   </React.StrictMode>,
   document.getElementById('root')
 );

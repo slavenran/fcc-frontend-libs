@@ -1,5 +1,11 @@
 import React from 'react'
 
+const styles = {
+    color: "purple",
+    fontSize: 20,
+    border: "2px solid purple"
+}
+
 class MyComponent extends React.Component {
     constructor(props) {
       super(props);
@@ -21,7 +27,7 @@ class MyComponent extends React.Component {
       const name = this.state.name;
       return (
         <div>
-          <button onClick={this.handleClick}>Click Me</button>
+          <button style={{color: "red"}} onClick={this.handleClick}>Click Me</button>
           <h1>{ name }: { this.state.clicked }</h1>
         </div>
       );
@@ -158,20 +164,13 @@ class DisappearingText extends React.Component {
     // }
 
     render() {
-        if (this.state.visibility) {
-            return(
-                <div>
-                    <button onClick={ this.toggleVisibility }>Click to hide</button>
-                    <div>Now you see me!</div>
-                </div>
-            );
-        } else {
-            return(
-                <div>
-                    <button onClick={ this.toggleVisibility }>Click to show</button>
-                </div>
-            );
-        }
+        return(
+            <div>
+                <button onClick={ this.toggleVisibility }>Click to hide</button>
+                {/* If visibility is true (condition), then return markup right of && */}
+                {this.state.visibility && <div>Now you see me!</div>}
+            </div>
+        );
     }
 }
 
@@ -185,7 +184,7 @@ class Doggie extends React.Component {
 
     render() {
         return (
-            <h1>The doggie name is: {this.state.name}</h1>
+            <h1 style={styles}>The doggie name is: {this.state.name}</h1>
         );
     }
 }

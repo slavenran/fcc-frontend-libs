@@ -5,6 +5,9 @@ import App from './App';
 import Test from './pages/Test'
 import CallbackProp from './pages/CallbackProp'
 import Lifecycle from './pages/LifecycleComponents'
+import EightBall from './pages/MagicEightBall';
+import ConditionalRendering from './pages/ConditionalRendering';
+import MapFilter from './pages/MapFilter';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -16,6 +19,9 @@ const Routing = () => {
         <Route path="/test" component={Test}/>
         <Route path="/callback" component={CallbackProp}/>
         <Route path="/lifecycle" component={Lifecycle}/>
+        <Route path="/eightball" component={EightBall}/>
+        <Route path="/rendering" component={ConditionalRendering}/>
+        <Route path="/mapfilter" component={MapFilter}/>
       </Switch>
     </Router>
   )

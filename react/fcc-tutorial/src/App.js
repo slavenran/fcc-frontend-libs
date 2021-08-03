@@ -44,6 +44,30 @@ function App() {
         >
           Open lifecycle page
         </a>
+        <a
+          className="App-link"
+          href="/eightball"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open magic eight ball page
+        </a>
+        <a
+          className="App-link"
+          href="/rendering"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open user age page
+        </a>
+        <a
+          className="App-link"
+          href="/mapfilter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open map and filtering page
+        </a>
       </header>
     </div>
   );

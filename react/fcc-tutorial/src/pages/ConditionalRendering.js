@@ -1,10 +1,11 @@
+
 import React from 'react'
 
 const inputStyle = {
     width: 235,
     margin: 5
   };
-  
+
   class CheckUserAge extends React.Component {
     constructor(props) {
       super(props);
@@ -86,6 +87,7 @@ class Results extends React.Component {
 }
 
 export default function ConditionalRendering() {
+  console.log();
     return(
         <div className="App-header">
             <CheckUserAge />

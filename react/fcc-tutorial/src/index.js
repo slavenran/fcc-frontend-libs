@@ -8,6 +8,7 @@ import Lifecycle from './pages/LifecycleComponents'
 import EightBall from './pages/MagicEightBall';
 import ConditionalRendering from './pages/ConditionalRendering';
 import MapFilter from './pages/MapFilter';
+import Redux from './pages/Redux';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -22,6 +23,7 @@ const Routing = () => {
         <Route path="/eightball" component={EightBall}/>
         <Route path="/rendering" component={ConditionalRendering}/>
         <Route path="/mapfilter" component={MapFilter}/>
+        <Route path="/redux" component={Redux}/>
       </Switch>
     </Router>
   )

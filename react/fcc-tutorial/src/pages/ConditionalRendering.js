@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React from 'react';
 
 const inputStyle = {
     width: 235,
@@ -93,5 +93,5 @@ export default function ConditionalRendering() {
             <CheckUserAge />
             <GameOfChance />
         </div>
-    )
+    );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+import { Helmet } from 'react-helmet'
 
 class QuoteMachine extends React.Component {
     constructor(props) {
@@ -73,6 +74,9 @@ class QuoteMachine extends React.Component {
     render() {
       return (
         <div className="App-header ease-color" style={{backgroundColor: this.state.bgColor}}>
+          <Helmet>
+            <title>Random Quote Machine</title>
+          </Helmet>
           <div id="quote-box">
             <div id="text" className="ease-color" style={{color: this.state.bgColor, opacity: this.state.opacity}}><FontAwesomeIcon id="quote" icon={faQuoteLeft}/>{this.state.quote}</div>
             <div id="author" className="ease-color" style={{color: this.state.bgColor, opacity: this.state.opacity}}>- {this.state.author}</div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Wow from "./pages/Wow.jsx";
+import Wow from "./pages/MarkdownPreviewer.jsx";
 
 const App = () => {
     return <Routes>

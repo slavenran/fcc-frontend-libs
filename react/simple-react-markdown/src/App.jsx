@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Wow from "./pages/MarkdownPreviewer.jsx";
+import MarkdownPreviewer from "./pages/MarkdownPreviewer.jsx";
 
 const App = () => {
     return <Routes>
         <Route
             exact
             path="/"
-            element={<Wow />}
+            element={<MarkdownPreviewer />}
         />
     </Routes>
 };
